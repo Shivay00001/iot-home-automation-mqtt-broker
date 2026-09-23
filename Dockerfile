@@ -6,4 +6,4 @@ COPY . .
 
 EXPOSE 1883
 
-ENTRYPOINT ["python", "src/main.py"]
+ENTRYPOINT ["python", "-m", "src.main"]

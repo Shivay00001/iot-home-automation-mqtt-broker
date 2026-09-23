@@ -39,7 +39,24 @@ Follow standard installation steps for `HTML` to set up the project locally:
 
 ## 💻 Usage
 
-Run the project using standard execution commands for `HTML`. Ensure all environment variables and configurations are set prior to execution.
+Start the broker (Python 3.11+, no third-party dependencies):
+
+```bash
+python -m src.main
+```
+
+Simulate a device publishing telemetry to the broker:
+
+```bash
+python src/device.py
+```
+
+Or with Docker:
+
+```bash
+docker build -t mqtt-broker .
+docker run -p 1883:1883 mqtt-broker
+```
 
 ## 🤝 Contributing
 
